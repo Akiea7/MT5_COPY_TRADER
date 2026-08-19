@@ -1,0 +1,112 @@
+<!-- views/history.html -->
+<div class="space-y-4 pb-6">
+
+    <!-- الترويسة وأزرار التصفية (التبويبات) -->
+    <div class="flex items-center gap-2">
+        <div class="flex flex-1 bg-gray-800/50 p-1 rounded-xl">
+            <button class="flex-1 bg-cardBg text-white py-2 rounded-lg text-xs font-semibold shadow-sm transition">العمليات</button>
+            <button class="flex-1 text-gray-400 hover:text-gray-200 py-2 rounded-lg text-xs font-semibold transition">نجحت</button>
+            <button class="flex-1 text-gray-400 hover:text-gray-200 py-2 rounded-lg text-xs font-semibold transition">فشلت</button>
+        </div>
+        <!-- زر الفلتر -->
+        <button class="w-10 h-10 bg-gray-800/50 text-gray-400 hover:text-white rounded-xl flex items-center justify-center transition">
+            <i class="fa-solid fa-filter text-sm"></i>
+        </button>
+    </div>
+
+    <!-- قائمة السجل -->
+    <div class="space-y-3 mt-4 relative before:absolute before:inset-y-0 before:right-[15px] before:w-[1px] before:bg-gray-800">
+        
+        <!-- عملية 1 (نجاح) -->
+        <div class="relative pr-10">
+            <!-- نقطة المسار -->
+            <div class="absolute right-2.5 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-accent ring-4 ring-darkBg z-10"></div>
+            
+            <div class="bg-cardBg p-3.5 rounded-xl border border-gray-800 flex justify-between items-center shadow-sm">
+                <div>
+                    <h4 class="text-sm font-semibold text-white mb-1">تم فتح صفقة شراء</h4>
+                    <p class="text-[11px] text-gray-400 font-mono flex items-center gap-1.5">
+                        XAUUSD 0.10 <i class="fa-solid fa-arrow-left text-[8px] text-gray-600"></i> Demo Slave 01
+                    </p>
+                </div>
+                <div class="border border-accent text-accent px-2.5 py-1 rounded-md text-[10px] font-bold bg-accent/10">
+                    نجح
+                </div>
+            </div>
+        </div>
+
+        <!-- عملية 2 (نجاح) -->
+        <div class="relative pr-10">
+            <div class="absolute right-2.5 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-accent ring-4 ring-darkBg z-10"></div>
+            
+            <div class="bg-cardBg p-3.5 rounded-xl border border-gray-800 flex justify-between items-center shadow-sm">
+                <div>
+                    <h4 class="text-sm font-semibold text-white mb-1">تم تعديل وقف الخسارة</h4>
+                    <p class="text-[11px] text-gray-400 font-mono flex items-center gap-1.5">
+                        EURUSD <i class="fa-solid fa-arrow-left text-[8px] text-gray-600"></i> Demo Slave 02
+                    </p>
+                </div>
+                <div class="border border-accent text-accent px-2.5 py-1 rounded-md text-[10px] font-bold bg-accent/10">
+                    نجح
+                </div>
+            </div>
+        </div>
+
+        <!-- عملية 3 (نجاح) -->
+        <div class="relative pr-10">
+            <div class="absolute right-2.5 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-accent ring-4 ring-darkBg z-10"></div>
+            
+            <div class="bg-cardBg p-3.5 rounded-xl border border-gray-800 flex justify-between items-center shadow-sm">
+                <div>
+                    <h4 class="text-sm font-semibold text-white mb-1">تم إغلاق صفقة بيع</h4>
+                    <p class="text-[11px] text-gray-400 font-mono flex items-center gap-1.5">
+                        GBPUSD 0.05 <i class="fa-solid fa-arrow-left text-[8px] text-gray-600"></i> Demo Slave 01
+                    </p>
+                </div>
+                <div class="border border-accent text-accent px-2.5 py-1 rounded-md text-[10px] font-bold bg-accent/10">
+                    نجح
+                </div>
+            </div>
+        </div>
+
+        <!-- عملية 4 (فشل) -->
+        <div class="relative pr-10">
+            <div class="absolute right-2.5 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-danger ring-4 ring-darkBg z-10"></div>
+            
+            <div class="bg-red-950/20 p-3.5 rounded-xl border border-red-900/50 flex justify-between items-start shadow-sm">
+                <div>
+                    <h4 class="text-sm font-semibold text-danger mb-1">فشل في فتح الصفقة</h4>
+                    <p class="text-[11px] text-gray-400 font-mono flex items-center gap-1.5 mb-1.5">
+                        USDJPY <i class="fa-solid fa-arrow-left text-[8px] text-gray-600"></i> Demo Slave 02
+                    </p>
+                    <p class="text-[10px] text-gray-500 bg-red-950/40 inline-block px-2 py-0.5 rounded border border-red-900/30">
+                        سبب: لا يوجد هامش كافٍ
+                    </p>
+                </div>
+                <div class="border border-danger text-danger px-2.5 py-1 rounded-md text-[10px] font-bold bg-danger/10">
+                    فشل
+                </div>
+            </div>
+        </div>
+
+        <!-- عملية 5 (نجاح) -->
+        <div class="relative pr-10">
+            <div class="absolute right-2.5 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-accent ring-4 ring-darkBg z-10"></div>
+            
+            <div class="bg-cardBg p-3.5 rounded-xl border border-gray-800 flex justify-between items-center shadow-sm">
+                <div>
+                    <h4 class="text-sm font-semibold text-white mb-1">تم تعديل جني الأرباح</h4>
+                    <p class="text-[11px] text-gray-400 font-mono flex items-center gap-1.5">
+                        XAUUSD <i class="fa-solid fa-arrow-left text-[8px] text-gray-600"></i> Demo Slave 01
+                    </p>
+                </div>
+                <div class="border border-accent text-accent px-2.5 py-1 rounded-md text-[10px] font-bold bg-accent/10">
+                    نجح
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
