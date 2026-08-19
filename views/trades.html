@@ -1,0 +1,136 @@
+<!-- views/trades.html -->
+<div class="space-y-4 pb-6 relative">
+
+    <!-- شريط التبويب (Tabs) -->
+    <div class="flex bg-gray-800/50 p-1 rounded-xl">
+        <button class="flex-1 bg-cardBg text-white py-2 rounded-lg text-sm font-semibold shadow-sm transition">الصفقات المنسوخة</button>
+        <button class="flex-1 text-gray-400 hover:text-gray-200 py-2 rounded-lg text-sm font-semibold transition">الصفقات المفتوحة</button>
+    </div>
+
+    <!-- فلتر الحساب -->
+    <div class="flex items-center justify-between bg-gray-800/40 px-3 py-2.5 rounded-lg border border-gray-700/50">
+        <span class="text-xs text-gray-400">Master: <span class="text-gray-200 font-semibold">Demo Master</span></span>
+        <button class="text-gray-500 hover:text-white transition"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <!-- قائمة الصفقات -->
+    <div class="space-y-3">
+        
+        <!-- صفقة 1: XAUUSD (ربح) -->
+        <div class="bg-cardBg p-3 rounded-xl border border-gray-800 flex justify-between items-center shadow-sm">
+            <!-- اليمين: الأيقونة والتفاصيل -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-yellow-900/20 text-yellow-500 flex items-center justify-center font-bold text-[10px] border border-yellow-700/30 shrink-0">
+                    <i class="fa-solid fa-coins text-lg"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-0.5 font-mono">XAUUSD</h4>
+                    <div class="flex items-center gap-2 text-[11px] font-mono">
+                        <span class="text-accent font-semibold">Buy 0.10</span>
+                        <span class="text-gray-500">Ticket: 123456</span>
+                    </div>
+                </div>
+            </div>
+            <!-- اليسار: الأسعار والربح -->
+            <div class="flex flex-col items-end">
+                <div dir="ltr" class="flex items-center gap-1.5 text-[11px] text-gray-400 font-mono mb-1">
+                    <span>2354.25</span>
+                    <i class="fa-solid fa-arrow-right-long text-[8px] text-gray-600"></i>
+                    <span class="text-white">2358.70</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-[10px] text-gray-500 font-mono">10:45:12</span>
+                    <span class="text-accent font-bold text-sm font-mono">+44.50</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- صفقة 2: EURUSD (ربح) -->
+        <div class="bg-cardBg p-3 rounded-xl border border-gray-800 flex justify-between items-center shadow-sm">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-900/20 text-blue-400 flex items-center justify-center font-bold text-[10px] border border-blue-700/30 shrink-0">
+                    <i class="fa-solid fa-euro-sign text-lg"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-0.5 font-mono">EURUSD</h4>
+                    <div class="flex items-center gap-2 text-[11px] font-mono">
+                        <span class="text-danger font-semibold">Sell 0.20</span>
+                        <span class="text-gray-500">Ticket: 123457</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-end">
+                <div dir="ltr" class="flex items-center gap-1.5 text-[11px] text-gray-400 font-mono mb-1">
+                    <span>1.08125</span>
+                    <i class="fa-solid fa-arrow-right-long text-[8px] text-gray-600"></i>
+                    <span class="text-white">1.07980</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-[10px] text-gray-500 font-mono">10:44:01</span>
+                    <span class="text-accent font-bold text-sm font-mono">+29.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- صفقة 3: GBPUSD (خسارة) -->
+        <div class="bg-cardBg p-3 rounded-xl border border-gray-800 flex justify-between items-center shadow-sm">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-green-900/20 text-green-500 flex items-center justify-center font-bold text-[10px] border border-green-700/30 shrink-0">
+                    <i class="fa-solid fa-sterling-sign text-lg"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-0.5 font-mono">GBPUSD</h4>
+                    <div class="flex items-center gap-2 text-[11px] font-mono">
+                        <span class="text-accent font-semibold">Buy 0.15</span>
+                        <span class="text-gray-500">Ticket: 123458</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-end">
+                <div dir="ltr" class="flex items-center gap-1.5 text-[11px] text-gray-400 font-mono mb-1">
+                    <span>1.26540</span>
+                    <i class="fa-solid fa-arrow-right-long text-[8px] text-gray-600"></i>
+                    <span class="text-white">1.26320</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-[10px] text-gray-500 font-mono">10:43:22</span>
+                    <span class="text-danger font-bold text-sm font-mono">-33.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- صفقة 4: USDJPY (ربح) -->
+        <div class="bg-cardBg p-3 rounded-xl border border-gray-800 flex justify-between items-center shadow-sm">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-red-900/20 text-red-500 flex items-center justify-center font-bold text-[10px] border border-red-700/30 shrink-0">
+                    <i class="fa-solid fa-yen-sign text-lg"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-0.5 font-mono">USDJPY</h4>
+                    <div class="flex items-center gap-2 text-[11px] font-mono">
+                        <span class="text-accent font-semibold">Buy 0.10</span>
+                        <span class="text-gray-500">Ticket: 123459</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-end">
+                <div dir="ltr" class="flex items-center gap-1.5 text-[11px] text-gray-400 font-mono mb-1">
+                    <span>156.250</span>
+                    <i class="fa-solid fa-arrow-right-long text-[8px] text-gray-600"></i>
+                    <span class="text-white">156.820</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-[10px] text-gray-500 font-mono">10:42:10</span>
+                    <span class="text-accent font-bold text-sm font-mono">+36.50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- إجمالي الربح والخسارة -->
+    <div class="bg-gray-800/80 p-4 rounded-xl border border-gray-700 flex justify-between items-center shadow-lg mt-6">
+        <span class="text-sm text-gray-300 font-semibold">إجمالي الربح / الخسارة</span>
+        <span class="text-accent font-bold text-lg font-mono">+77.00 USD</span>
+    </div>
+
+</div>
