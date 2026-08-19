@@ -1,0 +1,127 @@
+<!-- views/copy.html -->
+<div class="space-y-6 pb-6">
+
+    <!-- قسم تحديد المصدر والوجهة -->
+    <div class="bg-cardBg p-4 rounded-2xl border border-gray-800 shadow-sm">
+        <h3 class="text-center text-gray-400 text-xs mb-4">المصدر &larr; الوجهة</h3>
+        
+        <!-- حساب Master (المصدر) -->
+        <div class="flex items-center gap-3 p-3 bg-gray-800/30 rounded-xl border border-blue-900/30">
+            <div class="w-10 h-10 bg-blue-900/40 rounded-lg flex items-center justify-center text-blue-400 shrink-0">
+                <span class="font-bold text-xs tracking-tighter">MT5</span>
+            </div>
+            <div>
+                <h4 class="font-bold text-blue-400 text-sm">Master</h4>
+                <p class="text-[11px] text-gray-400 font-mono mt-0.5">Demo Master</p>
+            </div>
+        </div>
+
+        <!-- سهم الاتجاه -->
+        <div class="flex justify-center my-2 text-gray-500">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+
+        <!-- حساب Slave (الوجهة) -->
+        <div class="flex items-center gap-3 p-3 bg-gray-800/30 rounded-xl border border-purple-900/30">
+            <div class="w-10 h-10 bg-purple-900/30 rounded-lg flex items-center justify-center text-purple-400 shrink-0">
+                <span class="font-bold text-xs tracking-tighter">MT5</span>
+            </div>
+            <div>
+                <h4 class="font-bold text-purple-400 text-sm">Slave</h4>
+                <p class="text-[11px] text-gray-400 font-mono mt-0.5">Demo Slave 01, Demo Slave 02</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- طريقة حجم الصفقة -->
+    <div>
+        <h3 class="text-center text-gray-300 font-semibold mb-3 text-sm">طريقة حجم الصفقة</h3>
+        <div class="space-y-2.5">
+            
+            <!-- خيار: نفس الحجم -->
+            <label class="flex items-center justify-between p-3 bg-cardBg rounded-xl border border-gray-800 cursor-pointer hover:border-gray-700 transition">
+                <div class="flex items-center gap-3">
+                    <input type="radio" name="size_method" class="w-4 h-4 accent-blue-500 bg-gray-700 border-gray-600">
+                    <span class="text-sm text-gray-200">نفس الحجم</span>
+                </div>
+            </label>
+
+            <!-- خيار: مضاعف (محدد مسبقاً كما في الصورة) -->
+            <label class="flex items-center justify-between p-3 bg-cardBg rounded-xl border border-blue-900/50 cursor-pointer">
+                <div class="flex items-center gap-3">
+                    <input type="radio" name="size_method" checked class="w-4 h-4 accent-blue-500 bg-gray-700 border-gray-600">
+                    <span class="text-sm text-white">مضاعف</span>
+                </div>
+                <!-- حقل الإدخال -->
+                <div class="flex items-center bg-gray-800 rounded-lg overflow-hidden border border-gray-700 h-8">
+                    <button type="button" class="w-8 h-full flex justify-center items-center text-gray-400 hover:text-white hover:bg-gray-700 transition"><i class="fa-solid fa-minus text-[10px]"></i></button>
+                    <input type="text" value="1.50" class="w-12 text-center bg-transparent text-sm text-white focus:outline-none font-mono">
+                    <button type="button" class="w-8 h-full flex justify-center items-center text-gray-400 hover:text-white hover:bg-gray-700 transition"><i class="fa-solid fa-plus text-[10px]"></i></button>
+                </div>
+            </label>
+
+            <!-- خيار: نسبة من حجم Master -->
+            <label class="flex items-center justify-between p-3 bg-cardBg rounded-xl border border-gray-800 cursor-pointer hover:border-gray-700 transition">
+                <div class="flex items-center gap-3">
+                    <input type="radio" name="size_method" class="w-4 h-4 accent-blue-500 bg-gray-700 border-gray-600">
+                    <span class="text-sm text-gray-200">نسبة من حجم Master</span>
+                </div>
+                <div class="flex items-center bg-gray-800 rounded-lg overflow-hidden border border-gray-700 h-8 px-2">
+                    <span class="text-gray-400 text-xs">%</span>
+                    <input type="text" value="50" class="w-12 text-center bg-transparent text-sm text-white focus:outline-none font-mono">
+                </div>
+            </label>
+
+            <!-- خيار: حجم ثابت -->
+            <label class="flex items-center justify-between p-3 bg-cardBg rounded-xl border border-gray-800 cursor-pointer hover:border-gray-700 transition">
+                <div class="flex items-center gap-3">
+                    <input type="radio" name="size_method" class="w-4 h-4 accent-blue-500 bg-gray-700 border-gray-600">
+                    <span class="text-sm text-gray-200">حجم ثابت</span>
+                </div>
+                <div class="flex items-center bg-gray-800 rounded-lg overflow-hidden border border-gray-700 h-8">
+                    <input type="text" value="0.10" class="w-16 text-center bg-transparent text-sm text-white focus:outline-none font-mono">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <!-- الأصول (الرموز) -->
+    <div>
+        <h3 class="text-center text-gray-300 font-semibold mb-3 text-sm">الأصول (الرموز)</h3>
+        <div class="bg-cardBg p-4 rounded-2xl border border-gray-800 shadow-sm space-y-4">
+            
+            <!-- مفتاح تفعيل نسخ أزواج معينة -->
+            <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-200">نسخ الأزواج التالية فقط</span>
+                <button class="bg-blue-600 w-11 h-6 rounded-full relative flex items-center transition-colors">
+                    <div class="w-5 h-5 bg-white rounded-full absolute left-0.5 shadow-sm"></div>
+                </button>
+            </div>
+            
+            <!-- الكلمات الدلالية (الرموز) -->
+            <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1.5 bg-gray-800 text-gray-300 text-xs rounded-lg font-mono border border-gray-700">XAUUSD</span>
+                <span class="px-2.5 py-1.5 bg-gray-800 text-gray-300 text-xs rounded-lg font-mono border border-gray-700">EURUSD</span>
+                <span class="px-2.5 py-1.5 bg-gray-800 text-gray-300 text-xs rounded-lg font-mono border border-gray-700">GBPUSD</span>
+                <span class="px-2.5 py-1.5 bg-gray-800 text-gray-300 text-xs rounded-lg font-mono border border-gray-700">USDJPY</span>
+                <button class="px-2.5 py-1.5 bg-transparent text-gray-400 text-xs rounded-lg border border-gray-600 border-dashed hover:text-white transition">إضافة +</button>
+            </div>
+            
+            <hr class="border-gray-800">
+            
+            <!-- مفتاح تفعيل استثناء أصول معينة -->
+            <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-400">استثناء أصول معينة</span>
+                <button class="bg-gray-700 w-11 h-6 rounded-full relative flex items-center transition-colors">
+                    <div class="w-5 h-5 bg-gray-400 rounded-full absolute right-0.5 shadow-sm"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- زر تشغيل النسخ -->
+    <button class="w-full bg-accent hover:bg-green-600 text-white font-bold py-3.5 rounded-xl transition-colors flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+        تشغيل النسخ <i class="fa-solid fa-play ml-1"></i>
+    </button>
+
+</div>
