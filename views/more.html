@@ -1,0 +1,148 @@
+<!-- views/more.html (الإعدادات) -->
+<div class="space-y-6 pb-6">
+
+    <!-- قسم إعدادات النسخ -->
+    <div>
+        <h3 class="text-xs font-semibold text-gray-400 mb-2 px-2">إعدادات النسخ</h3>
+        <div class="bg-cardBg rounded-2xl border border-gray-800 divide-y divide-gray-800 shadow-sm overflow-hidden">
+            
+            <div class="flex justify-between items-center p-4 hover:bg-gray-800/50 transition cursor-pointer">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-clock text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">سرعة المزامنة</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-400">
+                    <span class="text-xs">ثانية</span>
+                    <i class="fa-solid fa-chevron-left text-[10px]"></i>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center p-4 hover:bg-gray-800/50 transition cursor-pointer">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-layer-group text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">الحد الأقصى للصفقات المفتوحة</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-400">
+                    <span class="text-xs font-mono">20 صفقة</span>
+                    <i class="fa-solid fa-chevron-left text-[10px]"></i>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center p-4 hover:bg-gray-800/50 transition cursor-pointer">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-chart-pie text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">الحد الأقصى لحجم اللوت</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-400">
+                    <span class="text-xs font-mono">2.00</span>
+                    <i class="fa-solid fa-chevron-left text-[10px]"></i>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center p-4 hover:bg-gray-800/50 transition cursor-pointer">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-shield-halved text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">إيقاف النسخ عند انخفاض Equity إلى</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-400">
+                    <span class="text-xs font-mono">%20</span>
+                    <i class="fa-solid fa-chevron-left text-[10px]"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- قسم إدارة المخاطر -->
+    <div>
+        <h3 class="text-xs font-semibold text-gray-400 mb-2 px-2">إدارة المخاطر</h3>
+        <div class="bg-cardBg rounded-2xl border border-gray-800 divide-y divide-gray-800 shadow-sm overflow-hidden">
+            
+            <div class="flex justify-between items-center p-4 hover:bg-gray-800/50 transition cursor-pointer">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-scale-balanced text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">حد المخاطرة لكل صفقة</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-400">
+                    <span class="text-xs font-mono">%2</span>
+                    <i class="fa-solid fa-chevron-left text-[10px]"></i>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center p-4 hover:bg-gray-800/50 transition cursor-pointer">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-circle-exclamation text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">إيقاف النسخ عند خسارة يومية</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-400">
+                    <span class="text-xs font-mono">%10</span>
+                    <i class="fa-solid fa-chevron-left text-[10px]"></i>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center p-4 hover:bg-gray-800/50 transition cursor-pointer">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-triangle-exclamation text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">إيقاف النسخ عند خسارة كلية</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-400">
+                    <span class="text-xs font-mono">%20</span>
+                    <i class="fa-solid fa-chevron-left text-[10px]"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- قسم الإشعارات (Toggles) -->
+    <div>
+        <h3 class="text-xs font-semibold text-gray-400 mb-2 px-2">الإشعارات</h3>
+        <div class="bg-cardBg rounded-2xl border border-gray-800 divide-y divide-gray-800 shadow-sm overflow-hidden">
+            
+            <div class="flex justify-between items-center p-4">
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-bell text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">إشعارات الصفقات</span>
+                </div>
+                <button class="bg-blue-600 w-11 h-6 rounded-full relative flex items-center transition-colors">
+                    <div class="w-5 h-5 bg-white rounded-full absolute left-0.5 shadow-sm"></div>
+                </button>
+            </div>
+
+            <div class="flex justify-between items-center p-4">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-bug text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">إشعارات الأخطاء</span>
+                </div>
+                <button class="bg-blue-600 w-11 h-6 rounded-full relative flex items-center transition-colors">
+                    <div class="w-5 h-5 bg-white rounded-full absolute left-0.5 shadow-sm"></div>
+                </button>
+            </div>
+
+            <div class="flex justify-between items-center p-4">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-power-off text-gray-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">إشعار عند إيقاف النسخ</span>
+                </div>
+                <button class="bg-gray-700 w-11 h-6 rounded-full relative flex items-center transition-colors">
+                    <div class="w-5 h-5 bg-gray-400 rounded-full absolute right-0.5 shadow-sm"></div>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- قوائم إضافية للربط مستقبلاً -->
+    <div class="grid grid-cols-2 gap-3 mt-4">
+        <button onclick="loadPage('history', 'السجل')" class="bg-cardBg border border-gray-800 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:bg-gray-800/50 transition">
+            <i class="fa-solid fa-list-ul text-blue-400 text-xl"></i>
+            <span class="text-xs text-white">سجل العمليات</span>
+        </button>
+        <button onclick="loadPage('ai_engine', 'المحرك الذكي')" class="bg-cardBg border border-gray-800 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:bg-gray-800/50 transition">
+            <i class="fa-solid fa-brain text-purple-400 text-xl"></i>
+            <span class="text-xs text-white">المحرك الذكي</span>
+        </button>
+    </div>
+
+</div>
+
