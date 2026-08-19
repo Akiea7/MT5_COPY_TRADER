@@ -1,0 +1,110 @@
+<!-- views/ai_engine.html -->
+<div class="space-y-6 pb-6">
+
+    <!-- الرأس وأيقونة المحرك الذكي -->
+    <div class="flex flex-col items-center justify-center pt-6 pb-2 relative">
+        <!-- شارة Beta -->
+        <span class="absolute top-0 right-2 bg-purple-600 text-white text-[9px] font-bold px-2 py-0.5 rounded-full tracking-widest">BETA</span>
+        
+        <!-- تأثير التوهج والدماغ -->
+        <div class="relative w-24 h-24 flex items-center justify-center mb-4">
+            <!-- دائرة التوهج الخلفية -->
+            <div class="absolute inset-0 bg-purple-600 opacity-20 rounded-full blur-xl animate-pulse"></div>
+            <!-- الدائرة المحيطة بالأيقونة -->
+            <div class="relative w-16 h-16 bg-purple-900/40 border border-purple-500/50 rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(168,85,247,0.3)] rotate-3 hover:rotate-0 transition-transform">
+                <i class="fa-solid fa-brain text-4xl text-purple-400 drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]"></i>
+            </div>
+        </div>
+        
+        <h2 class="text-base font-bold text-white mb-1">المحرك الذكي يتعلم من صفقاتك</h2>
+    </div>
+
+    <!-- حالة المحرك -->
+    <div class="bg-cardBg rounded-2xl p-4 border border-purple-900/30 flex justify-between items-center shadow-sm relative overflow-hidden">
+        <!-- خط جانبي ملون -->
+        <div class="absolute right-0 top-0 bottom-0 w-1 bg-accent"></div>
+        
+        <div>
+            <h3 class="text-sm font-semibold text-white">حالة المحرك</h3>
+            <p class="text-[11px] text-gray-400 mt-1 flex items-center gap-1.5">
+                <i class="fa-solid fa-arrows-rotate text-[10px] text-purple-400 animate-spin"></i> جاري تحليل الصفقات وبناء النماذج
+            </p>
+        </div>
+        <div class="text-accent font-bold text-sm flex items-center gap-1.5">
+            يعمل <i class="fa-solid fa-circle text-[8px] animate-pulse"></i>
+        </div>
+    </div>
+
+    <!-- الإحصائيات -->
+    <div>
+        <h3 class="text-xs font-semibold text-gray-400 mb-2 px-2">الإحصائيات</h3>
+        <div class="bg-cardBg rounded-2xl border border-gray-800 divide-y divide-gray-800 shadow-sm overflow-hidden">
+            
+            <div class="flex justify-between items-center p-3.5">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-database text-gray-500 w-5 text-center text-sm"></i>
+                    <span class="text-sm text-gray-200">الصفقات المحللة</span>
+                </div>
+                <span class="text-sm font-bold text-white font-mono">1,248</span>
+            </div>
+
+            <div class="flex justify-between items-center p-3.5">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-chart-line text-gray-500 w-5 text-center text-sm"></i>
+                    <span class="text-sm text-gray-200">نسبة الربح المتوقعة</span>
+                </div>
+                <span class="text-sm font-bold text-accent font-mono">62.4%</span>
+            </div>
+
+            <div class="flex justify-between items-center p-3.5">
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-clock text-gray-500 w-5 text-center text-sm"></i>
+                    <span class="text-sm text-gray-200">أفضل وقت للتداول</span>
+                </div>
+                <span class="text-[11px] text-gray-300 font-mono">14:00 - 18:00</span>
+            </div>
+
+            <div class="flex justify-between items-center p-3.5">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-star text-gray-500 w-5 text-center text-sm"></i>
+                    <span class="text-sm text-gray-200">أفضل الأزواج</span>
+                </div>
+                <span class="text-[11px] text-gray-300 font-mono">XAUUSD, EURUSD</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- أدوات الذكاء -->
+    <div>
+        <h3 class="text-xs font-semibold text-gray-400 mb-2 px-2">أدوات الذكاء</h3>
+        <div class="bg-cardBg rounded-2xl border border-gray-800 divide-y divide-gray-800 shadow-sm overflow-hidden">
+            
+            <button class="w-full flex justify-between items-center p-4 hover:bg-gray-800/50 transition">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-magnifying-glass-chart text-blue-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">تحليل الصفقات</span>
+                </div>
+                <i class="fa-solid fa-chevron-left text-[10px] text-gray-500"></i>
+            </button>
+
+            <button class="w-full flex justify-between items-center p-4 hover:bg-gray-800/50 transition">
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-lightbulb text-yellow-500 w-5 text-center"></i>
+                    <span class="text-sm text-white">اقتراحات ذكية</span>
+                </div>
+                <i class="fa-solid fa-chevron-left text-[10px] text-gray-500"></i>
+            </button>
+
+            <button class="w-full flex justify-between items-center p-4 hover:bg-gray-800/50 transition">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-robot text-purple-400 w-5 text-center"></i>
+                    <span class="text-sm text-white">تداول ذاتي (تجريبي)</span>
+                </div>
+                <i class="fa-solid fa-chevron-left text-[10px] text-gray-500"></i>
+            </button>
+
+        </div>
+    </div>
+
+</div>
