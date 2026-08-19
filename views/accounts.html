@@ -1,0 +1,167 @@
+<!-- views/accounts.html -->
+<div class="space-y-6 pb-6">
+
+    <!-- قسم حسابات Master -->
+    <div>
+        <h3 class="text-center text-blue-500 font-semibold mb-3 text-sm">حسابات Master</h3>
+        
+        <!-- بطاقة حساب Master -->
+        <div class="bg-cardBg rounded-2xl p-4 border border-blue-900/50 shadow-[0_0_15px_rgba(30,58,138,0.15)] relative">
+            <!-- الجزء العلوي: الأيقونة، الاسم، التفاصيل، وقائمة الخيارات -->
+            <div class="flex justify-between items-start mb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-blue-900/40 rounded-lg flex items-center justify-center text-blue-400">
+                        <span class="font-bold text-xs tracking-tighter">MT5</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Demo Master</h4>
+                        <p class="text-[11px] text-gray-400 font-mono mt-0.5"># 12345678 - Demo</p>
+                        <p class="text-[10px] text-gray-500">Broker: Exness-MT5Trial</p>
+                    </div>
+                </div>
+                <button class="text-gray-400 hover:text-white p-1">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+            </div>
+            
+            <!-- الجزء الأوسط: الأرقام المالية -->
+            <div class="grid grid-cols-3 gap-2 mb-4 text-center">
+                <div>
+                    <p class="text-[11px] text-gray-400 mb-1">الرصيد</p>
+                    <p class="text-sm font-bold text-white font-mono">10,250.50</p>
+                    <p class="text-[10px] text-gray-500">USD</p>
+                </div>
+                <div>
+                    <p class="text-[11px] text-gray-400 mb-1">Equity</p>
+                    <p class="text-sm font-bold text-white font-mono">10,278.90</p>
+                    <p class="text-[10px] text-gray-500">USD</p>
+                </div>
+                <div>
+                    <p class="text-[11px] text-gray-400 mb-1">Margin</p>
+                    <p class="text-sm font-bold text-white font-mono">215.30</p>
+                    <p class="text-[10px] text-gray-500">USD</p>
+                </div>
+            </div>
+            
+            <!-- الجزء السفلي: حالة الاتصال وزر التفعيل -->
+            <div class="flex justify-between items-center pt-3 border-t border-gray-800">
+                <div class="flex items-center gap-1.5 text-accent text-xs font-semibold">
+                    <i class="fa-solid fa-circle text-[8px]"></i> متصل
+                </div>
+                <!-- زر تفعيل مخصص (Toggle) -->
+                <button class="bg-blue-600 text-white text-[11px] font-bold py-1 px-1 rounded-full flex items-center w-16 justify-between transition-colors">
+                    <span class="pr-2">مفعل</span>
+                    <div class="w-4 h-4 bg-white rounded-full shadow-sm"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم حسابات Slave -->
+    <div>
+        <h3 class="text-center text-purple-400 font-semibold mb-3 text-sm">حسابات Slave</h3>
+        
+        <div class="space-y-4">
+            <!-- بطاقة حساب Slave 01 -->
+            <div class="bg-cardBg rounded-2xl p-4 border border-gray-800 shadow-sm relative">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-purple-900/30 rounded-lg flex items-center justify-center text-purple-400">
+                            <span class="font-bold text-xs tracking-tighter">MT5</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Demo Slave 01</h4>
+                            <p class="text-[11px] text-gray-400 font-mono mt-0.5"># 87654321 - Demo</p>
+                            <p class="text-[10px] text-gray-500">Broker: Exness-MT5Trial</p>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-white p-1">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-2 mb-4 text-center">
+                    <div>
+                        <p class="text-[11px] text-gray-400 mb-1">الرصيد</p>
+                        <p class="text-sm font-bold text-white font-mono">5,120.30</p>
+                        <p class="text-[10px] text-gray-500">USD</p>
+                    </div>
+                    <div>
+                        <p class="text-[11px] text-gray-400 mb-1">Equity</p>
+                        <p class="text-sm font-bold text-white font-mono">5,142.10</p>
+                        <p class="text-[10px] text-gray-500">USD</p>
+                    </div>
+                    <div>
+                        <p class="text-[11px] text-gray-400 mb-1">Margin</p>
+                        <p class="text-sm font-bold text-white font-mono">132.40</p>
+                        <p class="text-[10px] text-gray-500">USD</p>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between items-center pt-3 border-t border-gray-800">
+                    <div class="flex items-center gap-1.5 text-accent text-xs font-semibold">
+                        <i class="fa-solid fa-circle text-[8px]"></i> متصل
+                    </div>
+                    <button class="bg-purple-600 text-white text-[11px] font-bold py-1 px-1 rounded-full flex items-center w-16 justify-between transition-colors">
+                        <span class="pr-2">مفعل</span>
+                        <div class="w-4 h-4 bg-white rounded-full shadow-sm"></div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- بطاقة حساب Slave 02 -->
+            <div class="bg-cardBg rounded-2xl p-4 border border-gray-800 shadow-sm relative">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-purple-900/30 rounded-lg flex items-center justify-center text-purple-400">
+                            <span class="font-bold text-xs tracking-tighter">MT5</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Demo Slave 02</h4>
+                            <p class="text-[11px] text-gray-400 font-mono mt-0.5"># 11223344 - Demo</p>
+                            <p class="text-[10px] text-gray-500">Broker: Exness-MT5Trial</p>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-white p-1">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-2 mb-4 text-center">
+                    <div>
+                        <p class="text-[11px] text-gray-400 mb-1">الرصيد</p>
+                        <p class="text-sm font-bold text-white font-mono">3,230.10</p>
+                        <p class="text-[10px] text-gray-500">USD</p>
+                    </div>
+                    <div>
+                        <p class="text-[11px] text-gray-400 mb-1">Equity</p>
+                        <p class="text-sm font-bold text-white font-mono">3,210.50</p>
+                        <p class="text-[10px] text-gray-500">USD</p>
+                    </div>
+                    <div>
+                        <p class="text-[11px] text-gray-400 mb-1">Margin</p>
+                        <p class="text-sm font-bold text-white font-mono">98.70</p>
+                        <p class="text-[10px] text-gray-500">USD</p>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between items-center pt-3 border-t border-gray-800">
+                    <div class="flex items-center gap-1.5 text-accent text-xs font-semibold">
+                        <i class="fa-solid fa-circle text-[8px]"></i> متصل
+                    </div>
+                    <button class="bg-purple-600 text-white text-[11px] font-bold py-1 px-1 rounded-full flex items-center w-16 justify-between transition-colors">
+                        <span class="pr-2">مفعل</span>
+                        <div class="w-4 h-4 bg-white rounded-full shadow-sm"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- زر إضافة حساب جديد -->
+    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition-colors flex items-center justify-center gap-2 shadow-lg mt-4">
+        إضافة حساب جديد <i class="fa-solid fa-plus"></i>
+    </button>
+
+</div>
+
